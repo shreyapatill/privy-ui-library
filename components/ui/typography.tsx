@@ -17,6 +17,12 @@ const H1 = React.forwardRef<TextRef, SlottableTextProps>(
 					"web:scroll-m-20 text-4xl text-foreground font-extrabold tracking-tight lg:text-5xl web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -37,6 +43,12 @@ const H2 = React.forwardRef<TextRef, SlottableTextProps>(
 					"web:scroll-m-20 border-b border-border pb-2 text-3xl text-foreground font-semibold tracking-tight first:mt-0 web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_600SemiBold",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -57,6 +69,12 @@ const H3 = React.forwardRef<TextRef, SlottableTextProps>(
 					"web:scroll-m-20 text-2xl text-foreground font-semibold tracking-tight web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -77,6 +95,12 @@ const H4 = React.forwardRef<TextRef, SlottableTextProps>(
 					"web:scroll-m-20 text-xl text-foreground font-semibold tracking-tight web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -92,6 +116,12 @@ const P = React.forwardRef<TextRef, SlottableTextProps>(
 		return (
 			<Component
 				className={cn("text-base text-foreground web:select-text", className)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -111,6 +141,12 @@ const BlockQuote = React.forwardRef<TextRef, SlottableTextProps>(
 					"mt-6 native:mt-4 border-l-2 border-border pl-6 native:pl-3 text-base text-foreground italic web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -131,6 +167,12 @@ const Code = React.forwardRef<TextRef, SlottableTextProps>(
 					"relative rounded-md bg-muted px-[0.3rem] py-[0.2rem] text-sm text-foreground font-semibold web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -149,6 +191,12 @@ const Lead = React.forwardRef<TextRef, SlottableTextProps>(
 					"text-xl text-muted-foreground web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -167,6 +215,12 @@ const Large = React.forwardRef<TextRef, SlottableTextProps>(
 					"text-xl text-foreground font-semibold web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -185,6 +239,12 @@ const Small = React.forwardRef<TextRef, SlottableTextProps>(
 					"text-sm text-foreground font-medium leading-none web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -203,6 +263,12 @@ const Muted = React.forwardRef<TextRef, SlottableTextProps>(
 					"text-sm text-muted-foreground web:select-text",
 					className,
 				)}
+				style={[
+					{
+					  fontFamily: "Outfit_400Regular",
+					},
+					props.style,
+				  ]}
 				ref={ref}
 				{...props}
 			/>
@@ -212,4 +278,4 @@ const Muted = React.forwardRef<TextRef, SlottableTextProps>(
 
 Muted.displayName = "Muted";
 
-export { BlockQuote, Code, H1, H2, H3, H4, Large, Lead, Muted, P, Small };
+export { H1, H2, H3, H4, P, BlockQuote, Code, Lead, Large, Small, Muted };

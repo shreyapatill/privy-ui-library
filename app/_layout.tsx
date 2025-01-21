@@ -1,13 +1,24 @@
 import "../global.css";
 
 import { Slot } from "expo-router";
+import { useFonts, Outfit_400Regular, Outfit_600SemiBold, Outfit_500Medium } from "@expo-google-fonts/outfit";
+import * as SplashScreen from "expo-splash-screen";
 
-import { SupabaseProvider } from "@/context/supabase-provider";
+SplashScreen.preventAutoHideAsync();
 
 export default function AppLayout() {
-	return (
-		<SupabaseProvider>
-			<Slot />
-		</SupabaseProvider>
-	);
+  const [fontsLoaded] = useFonts({
+    Outfit_400Regular,
+    Outfit_600SemiBold,
+    Outfit_500Medium,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+  SplashScreen.hideAsync();
+
+  return (
+    <Slot />
+  );
 }

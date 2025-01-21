@@ -3,47 +3,78 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--background: 0 0% 100%;
-		--foreground: 240 10% 3.9%;
-		--card: 0 0% 100%;
-		--card-foreground: 240 10% 3.9%;
-		--popover: 0 0% 100%;
-		--popover-foreground: 240 10% 3.9%;
-		--primary: 240 5.9% 10%;
-		--primary-foreground: 0 0% 98%;
-		--secondary: 240 4.8% 95.9%;
-		--secondary-foreground: 240 5.9% 10%;
-		--muted: 240 4.8% 95.9%;
-		--muted-foreground: 240 3.8% 46.1%;
-		--accent: 240 4.8% 95.9%;
-		--accent-foreground: 240 5.9% 10%;
-		--destructive: 0 84.2% 60.2%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 240 5.9% 90%;
-		--input: 240 5.9% 90%;
-		--ring: 240 5.9% 10%;
-	}
+  :root {
+    /* Existing theme variables */
+    --background: 30 100% 99%;
+    --foreground: 208 8% 34%;
+    --card: 0 0% 100%;
+    --card-foreground: 208 8% 34%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 208 8% 34%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
 
-	.dark:root {
-		--background: 240 10% 3.9%;
-		--foreground: 0 0% 98%;
-		--card: 240 10% 3.9%;
-		--card-foreground: 0 0% 98%;
-		--popover: 240 10% 3.9%;
-		--popover-foreground: 0 0% 98%;
-		--primary: 0 0% 98%;
-		--primary-foreground: 240 5.9% 10%;
-		--secondary: 240 3.7% 15.9%;
-		--secondary-foreground: 0 0% 98%;
-		--muted: 240 3.7% 15.9%;
-		--muted-foreground: 240 5% 64.9%;
-		--accent: 240 3.7% 15.9%;
-		--accent-foreground: 0 0% 98%;
-		--destructive: 0 72% 51%;
-		--destructive-foreground: 0 0% 98%;
-		--border: 240 3.7% 15.9%;
-		--input: 240 3.7% 15.9%;
-		--ring: 240 4.9% 83.9%;
-	}
+    /* ----- NEW BRAND COLORS ----- */
+
+    /* Primary */
+    --primary-dusky-rose: 11 53% 66%;
+    --primary-rose-tea: 11 48% 83%;
+    --primary-pale-blush: 15 57% 84%;
+    --primary-blush-shell: 15 48% 93%;
+
+    /* Secondary */
+    --secondary-coral-spring: 13 83% 68%;
+    --secondary-spring-melon: 13 100% 87%;
+    --secondary-ochre-fawn: 32 85% 72%;
+    --secondary-fawn-sun: 32 93% 88%;
+
+    /* Tertiary */
+    --tertiary-viridian-green: 160 18% 48%;
+    --tertiary-green-dew: 159 18% 84%;
+    --tertiary-light-teal: 152 21% 71%;
+    --tertiary-teal-dew: 153 44% 89%;
+
+    /* Neutrals */
+    --neutral-floral-white: 30 100% 99%;
+    --neutral-timber-grey: 40 18% 87%;
+    --neutral-night-storm: 208 8% 34%;
+    --neutral-slate-ash: 0 0% 60%;
+  }
+
+  .dark:root {
+    /* Dark mode theme variables */
+    --background: 208 8% 34%;
+    --foreground: 0 0% 98%;
+    --card: 208 8% 34%;
+    --card-foreground: 0 0% 98%;
+    --popover: 208 8% 34%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+
+    /* If you want different brand colors in dark mode, set them here.
+       Otherwise, they inherit from :root if left out. */
+  }
 }
