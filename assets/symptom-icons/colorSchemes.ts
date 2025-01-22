@@ -11,4 +11,18 @@ export const colorSchemes = {
     strokeColor: colors.primary.blushShell,
     accentColor: colors.primary.paleBlush
   },
+  springEmpty: {
+    fillColor: "transparent",
+    strokeColor: colors.neutrals.timberGrey,
+    accentColor: colors.secondary.coralSpring,
+    secondaryAccentColor: colors.secondary.springMelon,
+    textColor: colors.neutrals.nightStorm
+  },
+  springFilled: {
+    fillColor: colors.secondary.springMelon,
+    strokeColor: colors.secondary.springMelon,
+    accentColor: colors.secondary.coralSpring,
+    secondaryAccentColor: colors.secondary.springMelon,
+    textColor: colors.neutrals.nightStorm
+  },  
 };

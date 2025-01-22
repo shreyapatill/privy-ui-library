@@ -9,7 +9,7 @@ type Props = {
   height?: number;
 };
 
-export default function Late({
+export default function Painkiller({
   fillColor = "transparent",
   strokeColor = "#000",
   accentColor = "#000",
