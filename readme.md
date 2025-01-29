@@ -78,16 +78,17 @@ The project uses:
 ## Icon Coding Progress
 
 ### Pink Icons
-![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+![](https://geps.dev/progress/100?dangerColor=EDC9BD&warningColor=EDC9BD&successColor=EDC9BD)
 
 ### Red Icons
-![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
+[3/33]: # 
 ### Yellow Icons
-![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+![](https://geps.dev/progress/9?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 ### Green Icons
-![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+![](https://geps.dev/progress/0?dangerColor=649182&warningColor=649182&successColor=649182)
 
 ### Light Green Icons
-![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+![](https://geps.dev/progress/0?dangerColor=A7C5B7&warningColor=A7C5B7&successColor=A7C5B7)
