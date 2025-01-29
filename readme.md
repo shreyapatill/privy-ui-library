@@ -71,3 +71,23 @@ The project uses:
 - Prettier for code formatting
 - TypeScript for type safety
 - Absolute imports for clean import paths
+
+## 🎯 Current Focus
+- Icons for symptoms
+
+## Icon Coding Progress
+
+### Pink Icons
+![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+
+### Red Icons
+![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+
+### Yellow Icons
+![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+
+### Green Icons
+![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)
+
+### Light Green Icons
+![](https://geps.dev/progress/10?dangerColor=800000&warningColor=ff9900&successColor=006600)

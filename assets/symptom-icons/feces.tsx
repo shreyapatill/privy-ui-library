@@ -10,7 +10,7 @@ type Props = {
   height?: number;
 };
 
-export default function Skin({
+export default function Feces({
   fillColor = "transparent",
   strokeColor = "#000",
   accentColor = "#000",
