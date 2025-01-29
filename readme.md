@@ -72,10 +72,10 @@ The project uses:
 - TypeScript for type safety
 - Absolute imports for clean import paths
 
-## 🎯 Current Focus
-- Icons for symptoms
 
-## Icon Coding Progress
+## Coding Progress
+
+### Currently working on: Symptom icons
 
 ### Pink Icons
 ![](https://geps.dev/progress/100?dangerColor=EDC9BD&warningColor=EDC9BD&successColor=EDC9BD)
