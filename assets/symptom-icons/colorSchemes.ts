@@ -25,4 +25,18 @@ export const colorSchemes = {
     secondaryAccentColor: colors.secondary.springMelon,
     textColor: colors.neutrals.nightStorm
   },  
+  fawnEmpty: {
+    fillColor: "transparent",
+    strokeColor: colors.neutrals.timberGrey,
+    accentColor: colors.secondary.ochreFawn,
+    secondaryAccentColor: colors.secondary.fawnSun,
+    textColor: colors.neutrals.nightStorm
+  },
+  fawnFilled: {
+    fillColor: colors.secondary.fawnSun,
+    strokeColor: colors.secondary.fawnSun,
+    accentColor: colors.secondary.ochreFawn,
+    secondaryAccentColor: colors.secondary.fawnSun,
+    textColor: colors.neutrals.nightStorm
+  },  
 };

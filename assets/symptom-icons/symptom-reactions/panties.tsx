@@ -5,7 +5,6 @@ type Props = {
   fillColor?: string;
   strokeColor?: string;
   accentColor?: string;
-  textColor?: string;
   secondaryAccentColor?: string;
   width?: number;
   height?: number;
@@ -15,7 +14,6 @@ export default function Period({
   fillColor = "transparent",
   strokeColor = "#000",
   accentColor = "#000",
-  textColor = "#000",
   secondaryAccentColor = "#000",
   width = 81,
   height = 80,

@@ -16,6 +16,13 @@ import { togglableIcons, ToggableIcon } from "@/assets/symptom-icons/togglableIc
 import { colorSchemes } from "@/assets/symptom-icons/colorSchemes";
 import Flow from "@/assets/symptom-icons/flow";
 import Method from "@/assets/symptom-icons/method";
+import Cramps from "@/assets/symptom-icons/cramps";
+import Skin from "@/assets/symptom-icons/skin";
+import Hair from "@/assets/symptom-icons/hair";
+import Cravings from "@/assets/symptom-icons/cravings";
+import Digestion from "@/assets/symptom-icons/digestion";
+import Discharge from "@/assets/symptom-icons/discharge";
+import Feces from "@/assets/symptom-icons/feces";
 
 // Our row definitions
 const ROWS_PILL = [
@@ -47,9 +54,38 @@ const ROWS_METHOD= [
     { ids: ["pad", "tampon"] },
     { ids: ["cup", "period"] },
 ];
+const ROWS_CRAMPS= [
+    { ids: ["lower-stomach", "vulvar"] },
+    { ids: ["lower-back", "headache"] },
+];
+const ROWS_SKIN= [
+    { ids: ["normal", "dry"] },
+    { ids: ["oily", "sensitive"] },
+];
+const ROWS_HAIR = [
+    { ids: ["normal-scalp", "oily-scalp"] },
+    { ids: ["dry-scalp", "hairfall"] },
+];
+const ROWS_CRAVINGS =[
+    { ids: ["carbs", "sweet"] },
+    { ids: ["spicy", "salty"] },
+    { ids: ["greasy"] },
+];
+const ROWS_DIGESTION =[
+    { ids: ["normal-digestion", "bloated"] },
+    { ids: ["gassy", "heartburn"] },
+    { ids: ["nausea"] },
+];
+const ROWS_DISCHARGE =[
+    { ids: ["lower-stomach", "vulvar"] },
+    { ids: ["lower-back", "headache"] },
+];
+const ROWS_FECES =[
+    { ids: ["lower-stomach", "vulvar"] },
+    { ids: ["lower-back", "headache"] },
+];
 
-
-type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled";
+type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled";
 
 export default function Icons() {
   // Build initial state: each togglableIcons entry => "blushEmpty" or "springEmpty"
@@ -72,9 +108,13 @@ export default function Icons() {
         // "springEmpty" <-> "springFilled"
         const newVal = oldVal === "springEmpty" ? "springFilled" : "springEmpty";
         return { ...prev, [id]: newVal };
-      } else {
+      } else if (iconObj.colorSet === "blush") {
         // "blushEmpty" <-> "blushFilled"
         const newVal = oldVal === "blushEmpty" ? "blushFilled" : "blushEmpty";
+        return { ...prev, [id]: newVal };
+      } else {
+        // "fawnEmpty" <-> "fawnFilled"
+        const newVal = oldVal === "fawnEmpty" ? "fawnFilled" : "fawnEmpty";
         return { ...prev, [id]: newVal };
       }
     });
@@ -179,7 +219,56 @@ export default function Icons() {
           <Muted>Method</Muted>
         </View>
         {ROWS_METHOD.map((row, i) => renderIconRow(row, i))}
+
+      {/* Cramps */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Cramps {...colorSchemes.fawnFilled} width={91} height={90} />
+          <Muted>Cramps</Muted>
+        </View>
+        {ROWS_CRAMPS.map((row, i) => renderIconRow(row, i))}
+
+        {/* Skin */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Skin {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Skin</Muted>
+        </View>
+        {ROWS_SKIN.map((row, i) => renderIconRow(row, i))}
+
+        {/* Hair */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Hair {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Hair</Muted>
+        </View>
+        {ROWS_HAIR.map((row, i) => renderIconRow(row, i))}
+
+        {/* Cravings */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Cravings {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Cravings</Muted>
+        </View>
+        {ROWS_CRAVINGS.map((row, i) => renderIconRow(row, i))}
+
+        {/* Digestion */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Digestion {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Digestion</Muted>
+        </View>
+        {ROWS_DIGESTION.map((row, i) => renderIconRow(row, i))}
+
+        {/* Discharge */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Discharge {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Discharge</Muted>
+        </View>
+        {ROWS_DISCHARGE.map((row, i) => renderIconRow(row, i))}
+        
+        {/* Feces */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Feces {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Feces</Muted>
+        </View>
+        {ROWS_FECES.map((row, i) => renderIconRow(row, i))}
       </ScrollView>
-    </View>
+    </View>    
   );
 }

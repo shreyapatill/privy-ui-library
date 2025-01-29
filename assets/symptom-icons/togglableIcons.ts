@@ -19,9 +19,14 @@ import Pad from "./symptom-reactions/pad";
 import Cup from "./symptom-reactions/cup";
 import Tampon from "./symptom-reactions/tampon";
 import Period from "./symptom-reactions/panties";
+import Cramps from "./symptom-reactions/lower-stomach";
+import LowerStomach from "./symptom-reactions/lower-stomach";
+import Vulvar from "./symptom-reactions/vulvar";
+import LowerBack from "./symptom-reactions/lower-back";
+import Headache from "./symptom-reactions/headache";
 
 // Decide the two possible "colorSet" options
-export type ColorSet = "blush" | "spring";
+export type ColorSet = "blush" | "spring" | "fawn";
 
 export type ToggableIcon = {
   id: string;
@@ -54,4 +59,11 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "tampon",       label: "Tampon",        IconComponent: Tampon,        colorSet: "spring" },
   { id: "cup",          label: "Cup",           IconComponent: Cup,           colorSet: "spring" },
   { id: "period",       label: "Period",        IconComponent: Period,        colorSet: "spring" },
+
+  // These use the "fawn" color set
+  { id: "lower-stomach",label: "Lower Stomach", IconComponent: LowerStomach,  colorSet: "fawn" },
+  { id: "vulvar",       label: "Vulvar",        IconComponent: Vulvar,        colorSet: "fawn" },
+  { id: "lower-back",   label: "Lower Back",    IconComponent: LowerBack,     colorSet: "fawn" },
+  { id: "headache",     label: "Headache",      IconComponent: Headache,  colorSet: "fawn" },
+
 ];
