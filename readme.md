@@ -1,27 +1,73 @@
-# Expo Supabase Starter
+Let me create a comprehensive README for your design system:
 
-![social-preview-dark](https://github.com/user-attachments/assets/bcee6db2-6dd0-435f-8255-3f4b36b4cfdc)
+# PrivyTrack Design System
 
-## Introduction
+A centralized design system containing standardized UI components, color tokens, icons, and typography for PrivyTrack applications. Built to streamline development workflows and maintain visual consistency across products.
 
-This repository serves as a comprehensive starter project for developing React Native and Expo applications with Supabase as the backend. It integrates various technologies such as Expo Router for navigation, Tailwind CSS for styling, React-Hook-Form for form handling, Zod for schema validation, and TypeScript for type safety. By leveraging these powerful tools, this starter template provides a robust foundation for building modern, scalable, and efficient mobile applications.
+## 🚀 Getting Started
 
-#### Disclaimer
+1. Clone the repository:
+```bash
+git clone [repository-url]
+cd privy-design-system
+```
 
-This is not supposed to be a template, boilerplate or a framework. It is an opinionated guide that shows how to do some things in a certain way. You are not forced to do everything exactly as it is shown here, decide what works best for you and your team and stay consistent with your style.
+2. Install dependencies:
+```bash
+yarn install
+```
 
-## Table of Contents
+3. Start the development server:
+```bash
+yarn start
+```
 
-- [💻 Application Overview](docs/application-overview.md)
-- [⚙️ Project Configuration](docs/project-configuration.md)
-- [🗄️ Project Structure](docs/project-structure.md)
-- [🧱 Components And Styling](docs/components-and-styling.md)
-- [🗃️ State Management](docs/state-management.md)
+## 🧱 Core Components
 
-## Contributing
+The design system includes:
+- Color tokens and themes
+- Icon library and assets
+- Typography system
+- Reusable React components
+- Design primitives and utilities
 
-Contributions to this starter project are highly encouraged and welcome! If you have any suggestions, bug reports, or feature requests, please feel free to create an issue or submit a pull request. Let's work together to enhance the developer experience and make it easier for everyone to build exceptional Expo applications with Supabase.
+## 🛠️ Tech Stack
 
-## License
+- **React Native** - Core framework
+- **NativeWind** - Utility-first styling using Tailwind CSS
+- **shadcn/ui** - Component library foundation
+- **TypeScript** - Type safety and developer experience
+- **Supabase** - Backend and authentication
 
-This repository is licensed under the MIT License. You are granted the freedom to use, modify, and distribute the code for personal or commercial purposes. For more details, please refer to the [LICENSE](https://github.com/FlemingVincent/supabase-starter/blob/main/LICENSE) file.
+## 📚 Usage
+
+Import components and tokens:
+```typescript
+import { Button, Typography, Colors } from '@privy/design-system';
+
+const MyComponent = () => (
+  <Button variant="primary">
+    Click me
+  </Button>
+);
+```
+
+## 🔧 Development
+
+### Project Structure
+```
+src/
+  ├── components/     # Reusable UI components
+  ├── tokens/         # Design tokens (colors, spacing, etc.)
+  ├── themes/         # Theme configurations
+  ├── utils/          # Helper functions
+  └── types/          # TypeScript definitions
+```
+
+### Configuration
+
+The project uses:
+- ESLint for code quality
+- Prettier for code formatting
+- TypeScript for type safety
+- Absolute imports for clean import paths
