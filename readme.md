@@ -84,7 +84,7 @@ The project uses:
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
 ### Yellow Icons
-![](https://geps.dev/progress/9?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+![](https://geps.dev/progress/18?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps
     - [] Lower Stomach
@@ -114,15 +114,15 @@ The project uses:
     - [] Heartburn
     - [] Nausea
 - [x] Discharge
-    - [] None
-    - [] Clear
-    - [] Dry
-    - [] Creamy
-    - [] Sticky
-- [] Feces
-    - [] Normal
-    - [] Constipation
-    - [] Diarrhea
+    - [ ] None
+    - [ ] Clear
+    - [ ] Dry
+    - [ ] Creamy
+    - [ ] Sticky
+- [ ] Feces
+    - [ ] Normal
+    - [ ] Constipation
+    - [ ] Diarrhea
 
 ### Green Icons
 ![](https://geps.dev/progress/0?dangerColor=649182&warningColor=649182&successColor=649182)
