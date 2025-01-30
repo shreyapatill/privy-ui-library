@@ -84,42 +84,42 @@ The project uses:
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
 ### Yellow Icons
-![](https://geps.dev/progress/18?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+![](https://geps.dev/progress/21?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps
-    - [] Lower Stomach
-    - [] Vulvar
-    - [] Lower Back
-    - [] Sensitive
+    - [ ] Lower Stomach
+    - [ ] Vulvar
+    - [ ] Lower Back
+    - [ ] Sensitive
 - [x] Skin
-    - [] Normal
-    - [] Dry
-    - [] Oily
-    - [] Headache
+    - [ ] Normal
+    - [ ] Dry
+    - [ ] Oily
+    - [ ] Headache
 - [x] Hair
-    - [] Normal Scalp
-    - [] Oily Scalp
-    - [] Dry Scalp
-    - [] Hairfall
+    - [ ] Normal Scalp
+    - [ ] Oily Scalp
+    - [ ] Dry Scalp
+    - [ ] Hairfall
 - [x] Cravings
-    - [] Carbs
-    - [] Sweet
-    - [] Spciy
-    - [] Salty
-    - [] Greasy
+    - [ ] Carbs
+    - [ ] Sweet
+    - [ ] Spicy
+    - [ ] Salty
+    - [ ] Greasy
 - [x] Digestion
-    - [] Normal
-    - [] Bloated
-    - [] Gassy
-    - [] Heartburn
-    - [] Nausea
+    - [ ] Normal
+    - [ ] Bloated
+    - [ ] Gassy
+    - [ ] Heartburn
+    - [ ] Nausea
 - [x] Discharge
     - [ ] None
     - [ ] Clear
     - [ ] Dry
     - [ ] Creamy
     - [ ] Sticky
-- [ ] Feces
+- [x] Feces
     - [ ] Normal
     - [ ] Constipation
     - [ ] Diarrhea
