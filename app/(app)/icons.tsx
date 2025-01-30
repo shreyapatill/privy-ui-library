@@ -59,8 +59,8 @@ const ROWS_CRAMPS= [
     { ids: ["lower-back", "headache"] },
 ];
 const ROWS_SKIN= [
-    { ids: ["normal", "dry"] },
-    { ids: ["oily", "sensitive"] },
+    { ids: ["normal-skin", "dry-skin"] },
+    { ids: ["oily-skin", "sensitive-skin"] },
 ];
 const ROWS_HAIR = [
     { ids: ["normal-scalp", "oily-scalp"] },

@@ -84,7 +84,7 @@ The project uses:
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
 ### Yellow Icons
-![](https://geps.dev/progress/33?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+![](https://geps.dev/progress/36?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps
     - [x] Lower Stomach
@@ -92,7 +92,7 @@ The project uses:
     - [x] Lower Back
     - [x] Sensitive
 - [x] Skin
-    - [ ] Normal
+    - [x] Normal
     - [ ] Dry
     - [ ] Oily
     - [ ] Headache
