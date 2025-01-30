@@ -10,13 +10,13 @@ type Props = {
   height?: number;
 };
 
-export default function Cravings({
-  fillColor = "#FDE1C2",
-  strokeColor = "#FDE1C2",
-  accentColor = "#F4BB79",
-  textColor = "#4F565C",
-  width = 91,
-  height = 90,
+export default function Cramps({
+  fillColor = "transparent",
+  strokeColor = "#000",
+  accentColor = "#000",
+  textColor = "#000",
+  width = 81,
+  height = 80,
 }: Props) {
   return (
     <Svg width={width} height={height} viewBox="0 0 91 90" fill="none">

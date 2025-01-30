@@ -83,9 +83,46 @@ The project uses:
 ### Red Icons
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
-[3/33]: # 
 ### Yellow Icons
 ![](https://geps.dev/progress/9?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+
+- [x] Cramps
+    - [] Lower Stomach
+    - [] Vulvar
+    - [] Lower Back
+    - [] Sensitive
+- [x] Skin
+    - [] Normal
+    - [] Dry
+    - [] Oily
+    - [] Headache
+- [x] Hair
+    - [] Normal Scalp
+    - [] Oily Scalp
+    - [] Dry Scalp
+    - [] Hairfall
+- [x] Cravings
+    - [] Carbs
+    - [] Sweet
+    - [] Spciy
+    - [] Salty
+    - [] Greasy
+- [x] Digestion
+    - [] Normal
+    - [] Bloated
+    - [] Gassy
+    - [] Heartburn
+    - [] Nausea
+- [x] Discharge
+    - [] None
+    - [] Clear
+    - [] Dry
+    - [] Creamy
+    - [] Sticky
+- [] Feces
+    - [] Normal
+    - [] Constipation
+    - [] Diarrhea
 
 ### Green Icons
 ![](https://geps.dev/progress/0?dangerColor=649182&warningColor=649182&successColor=649182)
