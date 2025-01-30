@@ -12,18 +12,18 @@ import Removed from "@/assets/symptom-icons/symptom-reactions/removed";
 import Positive from "@/assets/symptom-icons/symptom-reactions/positive";
 import Negative from "@/assets/symptom-icons/symptom-reactions/negative";
 import Light from "@/assets/symptom-icons/symptom-reactions/light";
-import Medium from "./symptom-reactions/medium";
-import Heavy from "./symptom-reactions/heavy";
-import Ultra from "./symptom-reactions/ultra";
-import Pad from "./symptom-reactions/pad";
-import Cup from "./symptom-reactions/cup";
-import Tampon from "./symptom-reactions/tampon";
-import Period from "./symptom-reactions/panties";
-import Cramps from "./symptom-reactions/lower-stomach";
-import LowerStomach from "./symptom-reactions/lower-stomach";
-import Vulvar from "./symptom-reactions/vulvar";
-import LowerBack from "./symptom-reactions/lower-back";
-import Headache from "./symptom-reactions/headache";
+import Medium from "@/assets/symptom-icons/symptom-reactions/medium";
+import Heavy from "@/assets/symptom-icons/symptom-reactions/heavy";
+import Ultra from "@/assets/symptom-icons/symptom-reactions/ultra";
+import Pad from "@/assets/symptom-icons/symptom-reactions/pad";
+import Cup from "@/assets/symptom-icons/symptom-reactions/cup";
+import Tampon from "@/assets/symptom-icons/symptom-reactions/tampon";
+import Period from "@/assets/symptom-icons/symptom-reactions/panties";
+import Cramps from "@/assets/symptom-icons/cramps";
+import LowerStomach from "@/assets/symptom-icons/symptom-reactions/lower-stomach";
+import Vulvar from "@/assets/symptom-icons/symptom-reactions/vulvar";
+import LowerBack from "@/assets/symptom-icons/symptom-reactions/lower-back";
+import Headache from "@/assets/symptom-icons/symptom-reactions/headache";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -64,6 +64,6 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "lower-stomach",label: "Lower Stomach", IconComponent: LowerStomach,  colorSet: "fawn" },
   { id: "vulvar",       label: "Vulvar",        IconComponent: Vulvar,        colorSet: "fawn" },
   { id: "lower-back",   label: "Lower Back",    IconComponent: LowerBack,     colorSet: "fawn" },
-  { id: "headache",     label: "Headache",      IconComponent: Headache,  colorSet: "fawn" },
+  { id: "headache",     label: "Headache",      IconComponent: Headache,      colorSet: "fawn" },
 
 ];

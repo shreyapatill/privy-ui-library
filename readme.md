@@ -84,13 +84,13 @@ The project uses:
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
 ### Yellow Icons
-![](https://geps.dev/progress/21?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+![](https://geps.dev/progress/33?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps
-    - [ ] Lower Stomach
-    - [ ] Vulvar
-    - [ ] Lower Back
-    - [ ] Sensitive
+    - [x] Lower Stomach
+    - [x] Vulvar
+    - [x] Lower Back
+    - [x] Sensitive
 - [x] Skin
     - [ ] Normal
     - [ ] Dry

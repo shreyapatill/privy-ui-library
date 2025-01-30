@@ -91,7 +91,13 @@ export default function Icons() {
   // Build initial state: each togglableIcons entry => "blushEmpty" or "springEmpty"
   const initialState: Record<string, Scheme> = {};
   togglableIcons.forEach((icon: ToggableIcon) => {
-    initialState[icon.id] = icon.colorSet === "spring" ? "springEmpty" : "blushEmpty";
+    if (icon.colorSet === "spring") {
+      initialState[icon.id] = "springEmpty";
+    } else if (icon.colorSet === "fawn") {
+      initialState[icon.id] = "fawnEmpty";
+    } else {
+      initialState[icon.id] = "blushEmpty";
+    }
   });
 
   const [iconSchemes, setIconSchemes] = useState(initialState);
