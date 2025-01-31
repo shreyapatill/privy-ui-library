@@ -93,8 +93,8 @@ The project uses:
     - [x] Sensitive
 - [x] Skin
     - [x] Normal
-    - [ ] Dry
-    - [ ] Oily
+    - [x] Dry
+    - [x] Oily
     - [ ] Headache
 - [x] Hair
     - [ ] Normal Scalp

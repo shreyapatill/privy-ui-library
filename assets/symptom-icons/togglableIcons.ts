@@ -26,6 +26,7 @@ import LowerBack from "@/assets/symptom-icons/symptom-reactions/lower-back";
 import Headache from "@/assets/symptom-icons/symptom-reactions/headache";
 import NormalSkin from "@/assets/symptom-icons/symptom-reactions/normal-skin";
 import DrySkin from "@/assets/symptom-icons/symptom-reactions/dry-skin";
+import OilySkin from "@/assets/symptom-icons/symptom-reactions/oily-skin";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -69,7 +70,7 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "headache",     label: "Headache",      IconComponent: Headache,      colorSet: "fawn" },
   { id: "normal-skin",  label: "Normal",        IconComponent: NormalSkin,    colorSet: "fawn" },
   { id: "dry-skin",     label: "Dry",           IconComponent: DrySkin,       colorSet: "fawn" },
-//  { id: "oily-skin",    label: "Oily",          IconComponent: OilySkin,      colorSet: "fawn" },
+  { id: "oily-skin",    label: "Oily",          IconComponent: OilySkin,      colorSet: "fawn" },
 //  { id: "sensitive-skin",label: "Sensitive",    IconComponent: SensitiveSkin, colorSet: "fawn" },
 
 ];
