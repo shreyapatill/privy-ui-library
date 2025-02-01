@@ -83,7 +83,7 @@ The project uses:
 ### Red Icons
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
-### Yellow Icons (29/37)
+### Yellow Icons (24/37)
 ![](https://geps.dev/progress/78?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps (5/5)
@@ -113,12 +113,12 @@ The project uses:
     - [x] Gassy
     - [x] Heartburn
     - [x] Nausea
-- [x] Discharge (1/6)
-    - [ ] None
-    - [ ] Clear
-    - [ ] Dry
-    - [ ] Creamy
-    - [ ] Sticky
+- [x] Discharge (6/6)
+    - [x] None
+    - [x] Clear
+    - [x] Dry
+    - [x] Creamy
+    - [x] Sticky
 - [x] Feces (1/4)
     - [ ] Normal
     - [ ] Constipation

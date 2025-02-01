@@ -42,6 +42,11 @@ import Bloated from "@/assets/symptom-icons/symptom-reactions/bloated";
 import Gassy from "@/assets/symptom-icons/symptom-reactions/gassy";
 import Heartburn from "@/assets/symptom-icons/symptom-reactions/heartburn";
 import Nausea from "@/assets/symptom-icons/symptom-reactions/nausea";
+import StickyDischarge from "@/assets/symptom-icons/symptom-reactions/sticky-discharge";
+import NoneDischarge from "@/assets/symptom-icons/symptom-reactions/none-discharge";
+import DryDischarge from "@/assets/symptom-icons/symptom-reactions/dry-discharge";
+import CreamyDischarge from "@/assets/symptom-icons/symptom-reactions/creamy-discharge";
+import ClearDischarge from "@/assets/symptom-icons/symptom-reactions/clear-discharge";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -101,4 +106,9 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "gassy",        label: "Gassy",         IconComponent: Gassy,         colorSet: "fawn" },
   { id: "heartburn",    label: "Heartburn",     IconComponent: Heartburn,     colorSet: "fawn" },
   { id: "nausea",       label: "Nausea",        IconComponent: Nausea,        colorSet: "fawn" },
+  { id: "none-discharge",   label: "None",      IconComponent: NoneDischarge,   colorSet: "fawn" },
+  { id: "clear-discharge",  label: "Clear",     IconComponent: ClearDischarge,  colorSet: "fawn" },
+  { id: "dry-discharge",    label: "Dry",       IconComponent: DryDischarge,    colorSet: "fawn" },
+  { id: "creamy-discharge", label: "Creamy",    IconComponent: CreamyDischarge, colorSet: "fawn" },
+  { id: "sticky-discharge", label: "Sticky",    IconComponent: StickyDischarge, colorSet: "fawn" },
 ];

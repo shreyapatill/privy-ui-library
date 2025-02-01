@@ -77,8 +77,9 @@ const ROWS_DIGESTION =[
     { ids: ["nausea"] },
 ];
 const ROWS_DISCHARGE =[
-    { ids: ["lower-stomach", "vulvar"] },
-    { ids: ["lower-back", "headache"] },
+    { ids: ["none-discharge", "clear-discharge"] },
+    { ids: ["dry-discharge", "creamy-discharge"] },
+    { ids: ["sticky-discharge"] },
 ];
 const ROWS_FECES =[
     { ids: ["lower-stomach", "vulvar"] },
