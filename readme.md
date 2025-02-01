@@ -97,7 +97,7 @@ The project uses:
     - [x] Oily
     - [x] Sensitive
 - [x] Hair (1/5)
-    - [ ] Normal Scalp
+    - [x] Normal Scalp
     - [ ] Oily Scalp
     - [ ] Dry Scalp
     - [ ] Hairfall
