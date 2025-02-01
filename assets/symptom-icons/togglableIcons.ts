@@ -37,6 +37,11 @@ import Sweet from "@/assets/symptom-icons/symptom-reactions/sweet";
 import Spicy from "@/assets/symptom-icons/symptom-reactions/spicy";
 import Salty from "@/assets/symptom-icons/symptom-reactions/salty";
 import Greasy from "@/assets/symptom-icons/symptom-reactions/greasy";
+import NormalDigestion from "@/assets/symptom-icons/symptom-reactions/normal-digestion";
+import Bloated from "@/assets/symptom-icons/symptom-reactions/bloated";
+import Gassy from "@/assets/symptom-icons/symptom-reactions/gassy";
+import Heartburn from "@/assets/symptom-icons/symptom-reactions/heartburn";
+import Nausea from "@/assets/symptom-icons/symptom-reactions/nausea";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -91,4 +96,9 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "spicy",        label: "Spicy",         IconComponent: Spicy,         colorSet: "fawn" },
   { id: "salty",        label: "Salty",         IconComponent: Salty,         colorSet: "fawn" },
   { id: "greasy",       label: "Greasy",        IconComponent: Greasy,        colorSet: "fawn" },
+  { id: "normal-digestion", label: "Normal Digestion", IconComponent: NormalDigestion, colorSet: "fawn" },
+  { id: "bloated",      label: "Bloated",       IconComponent: Bloated,       colorSet: "fawn" },
+  { id: "gassy",        label: "Gassy",         IconComponent: Gassy,         colorSet: "fawn" },
+  { id: "heartburn",    label: "Heartburn",     IconComponent: Heartburn,     colorSet: "fawn" },
+  { id: "nausea",       label: "Nausea",        IconComponent: Nausea,        colorSet: "fawn" },
 ];
