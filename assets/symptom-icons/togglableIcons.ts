@@ -29,6 +29,14 @@ import DrySkin from "@/assets/symptom-icons/symptom-reactions/dry-skin";
 import OilySkin from "@/assets/symptom-icons/symptom-reactions/oily-skin";
 import SensitiveSkin from "@/assets/symptom-icons/symptom-reactions/sensitive-skin";
 import NormalScalp from "@/assets/symptom-icons/symptom-reactions/normal-scalp";
+import OilyScalp from "@/assets/symptom-icons/symptom-reactions/oily-scalp";
+import DryScalp from "@/assets/symptom-icons/symptom-reactions/dry-scalp";
+import Hairfall from "@/assets/symptom-icons/symptom-reactions/hairfall";
+import Carbs from "@/assets/symptom-icons/symptom-reactions/carbs";
+import Sweet from "@/assets/symptom-icons/symptom-reactions/sweet";
+import Spicy from "@/assets/symptom-icons/symptom-reactions/spicy";
+import Salty from "@/assets/symptom-icons/symptom-reactions/salty";
+import Greasy from "@/assets/symptom-icons/symptom-reactions/greasy";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -75,5 +83,12 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "oily-skin",    label: "Oily",          IconComponent: OilySkin,      colorSet: "fawn" },
   { id: "sensitive-skin",label: "Sensitive",    IconComponent: SensitiveSkin, colorSet: "fawn" },
   { id: "normal-scalp", label: "Normal Scalp",  IconComponent: NormalScalp,   colorSet: "fawn" },
-
+  { id: "oily-scalp",   label: "Oily Scalp",    IconComponent: OilyScalp,     colorSet: "fawn" },
+  { id: "dry-scalp",    label: "Dry Scalp",     IconComponent: DryScalp,      colorSet: "fawn" },
+  { id: "hairfall",     label: "Hairfall",      IconComponent: Hairfall,      colorSet: "fawn" },
+  { id: "carbs",        label: "Carbs",         IconComponent: Carbs,         colorSet: "fawn" },
+  { id: "sweet",        label: "Sweet",         IconComponent: Sweet,         colorSet: "fawn" },
+  { id: "spicy",        label: "Spicy",         IconComponent: Spicy,         colorSet: "fawn" },
+  { id: "salty",        label: "Salty",         IconComponent: Salty,         colorSet: "fawn" },
+  { id: "greasy",       label: "Greasy",        IconComponent: Greasy,        colorSet: "fawn" },
 ];

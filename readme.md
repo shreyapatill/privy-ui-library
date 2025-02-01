@@ -83,8 +83,8 @@ The project uses:
 ### Red Icons
 ![](https://geps.dev/progress/100?dangerColor=F18769&warningColor=F18769&successColor=F18769)
 
-### Yellow Icons (15/37)
-![](https://geps.dev/progress/41?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
+### Yellow Icons (24/37)
+![](https://geps.dev/progress/65?dangerColor=F4BB79&warningColor=F4BB79&successColor=F4BB79)
 
 - [x] Cramps (5/5)
     - [x] Lower Stomach
@@ -96,17 +96,17 @@ The project uses:
     - [x] Dry
     - [x] Oily
     - [x] Sensitive
-- [x] Hair (1/5)
+- [x] Hair (5/5)
     - [x] Normal Scalp
-    - [ ] Oily Scalp
-    - [ ] Dry Scalp
-    - [ ] Hairfall
-- [x] Cravings (1/6)
-    - [ ] Carbs
-    - [ ] Sweet
-    - [ ] Spicy
-    - [ ] Salty
-    - [ ] Greasy
+    - [x] Oily Scalp
+    - [x] Dry Scalp
+    - [x] Hairfall
+- [x] Cravings (6/6)
+    - [x] Carbs
+    - [x] Sweet
+    - [x] Spicy
+    - [x] Salty
+    - [x] Greasy
 - [x] Digestion (1/6)
     - [ ] Normal
     - [ ] Bloated
