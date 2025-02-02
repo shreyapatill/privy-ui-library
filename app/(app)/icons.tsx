@@ -34,8 +34,7 @@ const ROWS_MED = [
   { ids: ["antibiotics", "contraception"] },
 ];
 const ROWS_RING= [
-  { ids: ["inserted", "removed"] },
-  { ids: ["late"] },
+  { ids: ["inserted", "removed", "late"] },
 ];
 const ROWS_IUD= [
   { ids: ["inserted", "removed"] },
@@ -67,26 +66,22 @@ const ROWS_HAIR = [
     { ids: ["dry-scalp", "hairfall"] },
 ];
 const ROWS_CRAVINGS =[
-    { ids: ["carbs", "sweet"] },
-    { ids: ["spicy", "salty"] },
-    { ids: ["greasy"] },
+    { ids: ["carbs", "sweet", "spicy"] },
+    { ids: ["salty", "greasy"] },
 ];
 const ROWS_DIGESTION =[
-    { ids: ["normal-digestion", "bloated"] },
-    { ids: ["gassy", "heartburn"] },
-    { ids: ["nausea"] },
+    { ids: ["normal-digestion", "bloated", "gassy"] },
+    { ids: ["heartburn", "nausea"] },
 ];
 const ROWS_DISCHARGE =[
-    { ids: ["none-discharge", "clear-discharge"] },
-    { ids: ["dry-discharge", "creamy-discharge"] },
-    { ids: ["sticky-discharge"] },
+    { ids: ["none-discharge", "clear-discharge", "dry-discharge"] },
+    { ids: ["creamy-discharge", "sticky-discharge"] },
 ];
 const ROWS_FECES =[
-    { ids: ["lower-stomach", "vulvar"] },
-    { ids: ["lower-back", "headache"] },
+    { ids: ["normal-feces", "constipation", "diarrhea"] },
 ];
 
-type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled";
+type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled" | "greenEmpty" | "greenFilled";
 
 export default function Icons() {
   // Build initial state: each togglableIcons entry => "blushEmpty" or "springEmpty"
@@ -96,8 +91,10 @@ export default function Icons() {
       initialState[icon.id] = "springEmpty";
     } else if (icon.colorSet === "fawn") {
       initialState[icon.id] = "fawnEmpty";
-    } else {
+    } else if (icon.colorSet === "blush"){
       initialState[icon.id] = "blushEmpty";
+    } else {
+      initialState[icon.id] = "greenEmpty";
     }
   });
 
@@ -119,9 +116,13 @@ export default function Icons() {
         // "blushEmpty" <-> "blushFilled"
         const newVal = oldVal === "blushEmpty" ? "blushFilled" : "blushEmpty";
         return { ...prev, [id]: newVal };
-      } else {
+      } else if (iconObj.colorSet === "fawn") {
         // "fawnEmpty" <-> "fawnFilled"
         const newVal = oldVal === "fawnEmpty" ? "fawnFilled" : "fawnEmpty";
+        return { ...prev, [id]: newVal };
+      } else {
+        // "greenEmpty" <-> "greenFilled"
+        const newVal = oldVal === "greenEmpty" ? "greenFilled" : "greenEmpty";
         return { ...prev, [id]: newVal };
       }
     });
@@ -272,6 +273,13 @@ export default function Icons() {
         {/* Feces */}
         <View className="flex flex-row items-center justify-center gap-4 mb-4">
             <Feces {...colorSchemes.fawnFilled} width={91} height={90} />
+            <Muted>Feces</Muted>
+        </View>
+        {ROWS_FECES.map((row, i) => renderIconRow(row, i))}
+        
+        {/* Feces */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+            <Feces {...colorSchemes.greenFilled} width={91} height={90} />
             <Muted>Feces</Muted>
         </View>
         {ROWS_FECES.map((row, i) => renderIconRow(row, i))}

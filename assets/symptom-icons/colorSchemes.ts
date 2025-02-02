@@ -39,4 +39,16 @@ export const colorSchemes = {
     secondaryAccentColor: colors.secondary.fawnSun,
     textColor: colors.neutrals.nightStorm
   },  
+  greenEmpty: {
+    fillColor: "transparent",
+    strokeColor: colors.tertiary.greenDew,
+    accentColor: colors.tertiary.viridianGreen,
+    secondaryAccentColor: colors.tertiary.greenDew,
+  },
+  greenFilled: {
+    fillColor: colors.tertiary.greenDew,
+    strokeColor: colors.tertiary.greenDew,
+    accentColor: colors.tertiary.viridianGreen,
+    secondaryAccentColor: colors.tertiary.greenDew,
+  },
 };

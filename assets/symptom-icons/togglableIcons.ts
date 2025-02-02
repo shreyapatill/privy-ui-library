@@ -47,6 +47,9 @@ import NoneDischarge from "@/assets/symptom-icons/symptom-reactions/none-dischar
 import DryDischarge from "@/assets/symptom-icons/symptom-reactions/dry-discharge";
 import CreamyDischarge from "@/assets/symptom-icons/symptom-reactions/creamy-discharge";
 import ClearDischarge from "@/assets/symptom-icons/symptom-reactions/clear-discharge";
+import NormalFeces from "@/assets/symptom-icons/symptom-reactions/normal-feces";
+import Constipation from "@/assets/symptom-icons/symptom-reactions/constipation";
+import Diarrhea from "@/assets/symptom-icons/symptom-reactions/diarrhea";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn";
@@ -111,4 +114,7 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "dry-discharge",    label: "Dry",       IconComponent: DryDischarge,    colorSet: "fawn" },
   { id: "creamy-discharge", label: "Creamy",    IconComponent: CreamyDischarge, colorSet: "fawn" },
   { id: "sticky-discharge", label: "Sticky",    IconComponent: StickyDischarge, colorSet: "fawn" },
+  { id: "normal-feces",     label: "Normal Feces",  IconComponent: NormalFeces,   colorSet: "fawn" },
+  { id: "constipation",     label: "Constipation",  IconComponent: Constipation,  colorSet: "fawn" },
+  { id: "diarrhea",         label: "Diarrhea",      IconComponent: Diarrhea,      colorSet: "fawn" },
 ];
