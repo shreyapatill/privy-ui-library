@@ -50,9 +50,16 @@ import ClearDischarge from "@/assets/symptom-icons/symptom-reactions/clear-disch
 import NormalFeces from "@/assets/symptom-icons/symptom-reactions/normal-feces";
 import Constipation from "@/assets/symptom-icons/symptom-reactions/constipation";
 import Diarrhea from "@/assets/symptom-icons/symptom-reactions/diarrhea";
+import Happy from "@/assets/symptom-icons/symptom-reactions/happy";
+import Excited from "@/assets/symptom-icons/symptom-reactions/excited";
+import Sad from "@/assets/symptom-icons/symptom-reactions/sad";
+import Angry from "@/assets/symptom-icons/symptom-reactions/angry";
+import Confident from "@/assets/symptom-icons/symptom-reactions/confident";
+import Anxious from "@/assets/symptom-icons/symptom-reactions/anxious";
+import Irritable from "@/assets/symptom-icons/symptom-reactions/irritable";
 
 // Decide the two possible "colorSet" options
-export type ColorSet = "blush" | "spring" | "fawn";
+export type ColorSet = "blush" | "spring" | "fawn" | "green";
 
 export type ToggableIcon = {
   id: string;
@@ -117,4 +124,13 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "normal-feces",     label: "Normal Feces",  IconComponent: NormalFeces,   colorSet: "fawn" },
   { id: "constipation",     label: "Constipation",  IconComponent: Constipation,  colorSet: "fawn" },
   { id: "diarrhea",         label: "Diarrhea",      IconComponent: Diarrhea,      colorSet: "fawn" },
+
+  { id: "happy",        label: "Happy",         IconComponent: Happy,         colorSet: "green" },
+  { id: "excited",      label: "Excited",       IconComponent: Excited,       colorSet: "green" },
+  { id: "sad",          label: "Sad",           IconComponent: Sad,           colorSet: "green" },
+  { id: "angry",        label: "Angry",         IconComponent: Angry,         colorSet: "green" },
+  { id: "confident",    label: "Confident",     IconComponent: Confident,     colorSet: "green" },
+  { id: "anxious",      label: "Anxious",       IconComponent: Anxious,     colorSet: "green" },
+  { id: "irritable",    label: "Irritable",     IconComponent: Irritable, colorSet: "green" },
+  
 ];

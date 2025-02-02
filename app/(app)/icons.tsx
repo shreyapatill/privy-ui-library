@@ -23,6 +23,12 @@ import Cravings from "@/assets/symptom-icons/cravings";
 import Digestion from "@/assets/symptom-icons/digestion";
 import Discharge from "@/assets/symptom-icons/discharge";
 import Feces from "@/assets/symptom-icons/feces";
+import Mood from "@/assets/symptom-icons/mood";
+import Energy from "@/assets/symptom-icons/energy";
+import Stress from "@/assets/symptom-icons/stress";
+import SOCIAL from "@/assets/symptom-icons/social";
+import Sickness from "@/assets/symptom-icons/sickness";
+
 
 // Our row definitions
 const ROWS_PILL = [
@@ -79,6 +85,28 @@ const ROWS_DISCHARGE =[
 ];
 const ROWS_FECES =[
     { ids: ["normal-feces", "constipation", "diarrhea"] },
+];
+const ROWS_MOOD =[
+  { ids: ["happy", "excited", "sad"] },
+  { ids: ["angry", "confident"] },
+  { ids: ["anxious", "irritable"] },
+];
+const ROWS_ENERGY = [
+  { ids: ["vivid", "energetic"] },
+  { ids: ["fatigued", "exhausted"] },
+];
+const ROWS_STRESS = [
+  { ids: ["calm", "motivated"] },
+  { ids: ["unmotivated", "stressed"] },
+];
+const ROWS_SOCIAL = [
+  { ids: ["sociable", "drained"] },
+  { ids: ["reserved"] },
+];
+const ROWS_SICKNESS = [
+  { ids: ["coldFlu", "allergies"] },
+  { ids: ["fever", "sti"] },
+  { ids: ["uti"] },
 ];
 
 type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled" | "greenEmpty" | "greenFilled";
@@ -277,12 +305,41 @@ export default function Icons() {
         </View>
         {ROWS_FECES.map((row, i) => renderIconRow(row, i))}
         
-        {/* Feces */}
+        {/* Mood */}
         <View className="flex flex-row items-center justify-center gap-4 mb-4">
-            <Feces {...colorSchemes.greenFilled} width={91} height={90} />
-            <Muted>Feces</Muted>
+            <Mood {...colorSchemes.greenFilled} width={91} height={90} />
+            <Muted>Mood</Muted>
         </View>
-        {ROWS_FECES.map((row, i) => renderIconRow(row, i))}
+        {ROWS_MOOD.map((row, i) => renderIconRow(row, i))}
+
+                {/* Energy */}
+                <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Energy {...colorSchemes.greenFilled} width={91} height={90} />
+          <Muted>Energy</Muted>
+        </View>
+        {ROWS_ENERGY.map((row, i) => renderIconRow(row, i))}
+
+        {/* Stress */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Stress {...colorSchemes.greenFilled} width={91} height={90} />
+          <Muted>Stress</Muted>
+        </View>
+        {ROWS_STRESS.map((row, i) => renderIconRow(row, i))}
+
+        {/* Social */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <SOCIAL {...colorSchemes.greenFilled} width={91} height={90} />
+          <Muted>Social</Muted>
+        </View>
+        {ROWS_SOCIAL.map((row, i) => renderIconRow(row, i))}
+
+        {/* Sickness */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Sickness {...colorSchemes.greenFilled} width={91} height={90} />
+          <Muted>Sickness</Muted>
+        </View>
+        {ROWS_SICKNESS.map((row, i) => renderIconRow(row, i))}
+
       </ScrollView>
     </View>    
   );

@@ -41,7 +41,7 @@ export const colorSchemes = {
   },  
   greenEmpty: {
     fillColor: "transparent",
-    strokeColor: colors.tertiary.greenDew,
+    strokeColor: colors.neutrals.timberGrey,
     accentColor: colors.tertiary.viridianGreen,
     secondaryAccentColor: colors.tertiary.greenDew,
   },
@@ -50,5 +50,6 @@ export const colorSchemes = {
     strokeColor: colors.tertiary.greenDew,
     accentColor: colors.tertiary.viridianGreen,
     secondaryAccentColor: colors.tertiary.greenDew,
+    textColor: colors.neutrals.nightStorm
   },
 };
