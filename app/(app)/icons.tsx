@@ -2,33 +2,10 @@ import React, { useState } from "react";
 import { View, ScrollView, TouchableOpacity } from "react-native";
 import { H2, Muted } from "@/components/ui/typography";
 
-// Single-row icons (non-togglable)
-import Pill from "@/assets/symptom-icons/pill";
-import Medication from "@/assets/symptom-icons/medication";
-
-import Ring from "@/assets/symptom-icons/ring";
-import IUD from "@/assets/symptom-icons/iud";
-import Tests from "@/assets/symptom-icons/tests";
-import BirthControl from "@/assets/symptom-icons/birth-control";
-
 // Toggable icons array
 import { togglableIcons, ToggableIcon } from "@/assets/symptom-icons/togglableIcons";
 import { colorSchemes } from "@/assets/symptom-icons/colorSchemes";
-import Flow from "@/assets/symptom-icons/flow";
-import Method from "@/assets/symptom-icons/method";
-import Cramps from "@/assets/symptom-icons/cramps";
-import Skin from "@/assets/symptom-icons/skin";
-import Hair from "@/assets/symptom-icons/hair";
-import Cravings from "@/assets/symptom-icons/cravings";
-import Digestion from "@/assets/symptom-icons/digestion";
-import Discharge from "@/assets/symptom-icons/discharge";
-import Feces from "@/assets/symptom-icons/feces";
-import Mood from "@/assets/symptom-icons/mood";
-import Energy from "@/assets/symptom-icons/energy";
-import Stress from "@/assets/symptom-icons/stress";
-import SOCIAL from "@/assets/symptom-icons/social";
-import Sickness from "@/assets/symptom-icons/sickness";
-
+import { Alcohol, BirthControl, Cramps, Cravings, Digestion, Discharge, Energy, Exercise, Feces, Flow, Hair, IUD, Medication, Method, Mood, Pill, Ring, Sex, Sickness, Skin, Social, Stress, Tests, Travel } from "@/assets/symptom-icons/icon-svg";
 
 // Our row definitions
 const ROWS_PILL = [
@@ -106,8 +83,23 @@ const ROWS_SICKNESS = [
   { ids: ["cold-flu", "allergies", "fever"] },
   { ids: ["sti", "uti"] },
 ];
+const ROWS_EXERCISE = [
+  { ids: ["running", "yoga", "strength"] },
+  { ids: ["biking", "walking", "rest-day"] },
+];
+const ROWS_SEX = [
+  { ids: ["protected", "unprotected", "high-libido"] },
+  { ids: ["low-libido", "orgasm", "no-orgasm"] },
+  { ids: ["masturbation", "rest-day-sex"] },
+];
+const ROWS_ALCOHOL = [
+  { ids: ["party-night", "light-drinking", "hangover"] },
+];
+const ROWS_TRAVEL = [
+  { ids: ["vacation", "work-trip"] },
+];
 
-type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled" | "greenEmpty" | "greenFilled";
+type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled" | "greenEmpty" | "greenFilled" | "tealEmpty" | "tealFilled";
 
 export default function Icons() {
   // Build initial state: each togglableIcons entry => "blushEmpty" or "springEmpty"
@@ -119,8 +111,10 @@ export default function Icons() {
       initialState[icon.id] = "fawnEmpty";
     } else if (icon.colorSet === "blush"){
       initialState[icon.id] = "blushEmpty";
-    } else {
+    } else if (icon.colorSet === "green"){
       initialState[icon.id] = "greenEmpty";
+    } else {
+      initialState[icon.id] = "tealEmpty";
     }
   });
 
@@ -146,9 +140,13 @@ export default function Icons() {
         // "fawnEmpty" <-> "fawnFilled"
         const newVal = oldVal === "fawnEmpty" ? "fawnFilled" : "fawnEmpty";
         return { ...prev, [id]: newVal };
-      } else {
+      } else if (iconObj.colorSet === "green") {
         // "greenEmpty" <-> "greenFilled"
         const newVal = oldVal === "greenEmpty" ? "greenFilled" : "greenEmpty";
+        return { ...prev, [id]: newVal };
+      } else {
+        // "tealEmpty" <-> "tealFilled"
+        const newVal = oldVal === "tealEmpty" ? "tealFilled" : "tealEmpty";
         return { ...prev, [id]: newVal };
       }
     });
@@ -196,7 +194,7 @@ export default function Icons() {
       <ScrollView className="flex-1 w-full">
         {/* Pill: single row, label on right, no toggling */}
         <View className="flex flex-row items-center justify-center gap-4 mb-4">
-          <Pill width={91} height={90} />
+          <Pill {...colorSchemes.blushFilled} width={91} height={90} />
           <Muted>Pill</Muted>
         </View>
 
@@ -326,7 +324,7 @@ export default function Icons() {
 
         {/* Social */}
         <View className="flex flex-row items-center justify-center gap-4 mb-4">
-          <SOCIAL {...colorSchemes.greenFilled} width={91} height={90} />
+          <Social {...colorSchemes.greenFilled} width={91} height={90} />
           <Muted>Social</Muted>
         </View>
         {ROWS_SOCIAL.map((row, i) => renderIconRow(row, i))}
@@ -337,6 +335,34 @@ export default function Icons() {
           <Muted>Sickness</Muted>
         </View>
         {ROWS_SICKNESS.map((row, i) => renderIconRow(row, i))}
+
+        {/* Exercise */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Exercise {...colorSchemes.tealFilled} width={91} height={90} />
+          <Muted>Exercise</Muted>
+        </View>
+        {ROWS_EXERCISE.map((row, i) => renderIconRow(row, i))}
+
+        {/* Sex */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Sex {...colorSchemes.tealFilled} width={91} height={90} />
+          <Muted>Sex</Muted>
+        </View>
+        {ROWS_SEX.map((row, i) => renderIconRow(row, i))}
+
+        {/* Alcohol */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Alcohol {...colorSchemes.tealFilled} width={91} height={90} />
+          <Muted>Alcohol</Muted>
+        </View>
+        {ROWS_ALCOHOL.map((row, i) => renderIconRow(row, i))}
+
+        {/* Travel */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
+          <Travel {...colorSchemes.tealFilled} width={91} height={90} />
+          <Muted>Travel</Muted>
+        </View>
+        {ROWS_TRAVEL.map((row, i) => renderIconRow(row, i))}
 
       </ScrollView>
     </View>    

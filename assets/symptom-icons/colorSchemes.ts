@@ -52,4 +52,17 @@ export const colorSchemes = {
     secondaryAccentColor: colors.tertiary.greenDew,
     textColor: colors.neutrals.nightStorm
   },
+  tealEmpty: {
+    fillColor: "transparent",
+    strokeColor: colors.neutrals.timberGrey,
+    accentColor: colors.tertiary.lightTeal,
+    secondaryAccentColor: colors.tertiary.tealDew,
+  },
+  tealFilled: {
+    fillColor: colors.tertiary.tealDew,
+    strokeColor: colors.tertiary.tealDew,
+    accentColor: colors.tertiary.lightTeal,
+    secondaryAccentColor: colors.tertiary.tealDew,
+    textColor: colors.neutrals.nightStorm
+  },
 };

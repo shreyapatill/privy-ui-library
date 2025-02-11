@@ -1,81 +1,102 @@
 // togglableIcons.ts
-import Check from "@/assets/symptom-icons/symptom-reactions/check";
-import Exclamation from "@/assets/symptom-icons/symptom-reactions/exclamation";
-import Late from "@/assets/symptom-icons/symptom-reactions/late";
-import No from "@/assets/symptom-icons/symptom-reactions/no";
-import Painkillers from "@/assets/symptom-icons/symptom-reactions/painkiller";
-import Antihistamine from "@/assets/symptom-icons/symptom-reactions/antihistamine";
-import Antibiotics from "@/assets/symptom-icons/symptom-reactions/antibiotics";
-import Contraception from "@/assets/symptom-icons/symptom-reactions/contraception";
-import Inserted from "@/assets/symptom-icons/symptom-reactions/inserted";
-import Removed from "@/assets/symptom-icons/symptom-reactions/removed";
-import Positive from "@/assets/symptom-icons/symptom-reactions/positive";
-import Negative from "@/assets/symptom-icons/symptom-reactions/negative";
-import Light from "@/assets/symptom-icons/symptom-reactions/light";
-import Medium from "@/assets/symptom-icons/symptom-reactions/medium";
-import Heavy from "@/assets/symptom-icons/symptom-reactions/heavy";
-import Ultra from "@/assets/symptom-icons/symptom-reactions/ultra";
-import Pad from "@/assets/symptom-icons/symptom-reactions/pad";
-import Cup from "@/assets/symptom-icons/symptom-reactions/cup";
-import Tampon from "@/assets/symptom-icons/symptom-reactions/tampon";
-import Period from "@/assets/symptom-icons/symptom-reactions/panties";
-import Cramps from "@/assets/symptom-icons/cramps";
-import LowerStomach from "@/assets/symptom-icons/symptom-reactions/lower-stomach";
-import Vulvar from "@/assets/symptom-icons/symptom-reactions/vulvar";
-import LowerBack from "@/assets/symptom-icons/symptom-reactions/lower-back";
-import Headache from "@/assets/symptom-icons/symptom-reactions/headache";
-import NormalSkin from "@/assets/symptom-icons/symptom-reactions/normal-skin";
-import DrySkin from "@/assets/symptom-icons/symptom-reactions/dry-skin";
-import OilySkin from "@/assets/symptom-icons/symptom-reactions/oily-skin";
-import SensitiveSkin from "@/assets/symptom-icons/symptom-reactions/sensitive-skin";
-import NormalScalp from "@/assets/symptom-icons/symptom-reactions/normal-scalp";
-import OilyScalp from "@/assets/symptom-icons/symptom-reactions/oily-scalp";
-import DryScalp from "@/assets/symptom-icons/symptom-reactions/dry-scalp";
-import Hairfall from "@/assets/symptom-icons/symptom-reactions/hairfall";
-import Carbs from "@/assets/symptom-icons/symptom-reactions/carbs";
-import Sweet from "@/assets/symptom-icons/symptom-reactions/sweet";
-import Spicy from "@/assets/symptom-icons/symptom-reactions/spicy";
-import Salty from "@/assets/symptom-icons/symptom-reactions/salty";
-import Greasy from "@/assets/symptom-icons/symptom-reactions/greasy";
-import NormalDigestion from "@/assets/symptom-icons/symptom-reactions/normal-digestion";
-import Bloated from "@/assets/symptom-icons/symptom-reactions/bloated";
-import Gassy from "@/assets/symptom-icons/symptom-reactions/gassy";
-import Heartburn from "@/assets/symptom-icons/symptom-reactions/heartburn";
-import Nausea from "@/assets/symptom-icons/symptom-reactions/nausea";
-import StickyDischarge from "@/assets/symptom-icons/symptom-reactions/sticky-discharge";
-import NoneDischarge from "@/assets/symptom-icons/symptom-reactions/none-discharge";
-import DryDischarge from "@/assets/symptom-icons/symptom-reactions/dry-discharge";
-import CreamyDischarge from "@/assets/symptom-icons/symptom-reactions/creamy-discharge";
-import ClearDischarge from "@/assets/symptom-icons/symptom-reactions/clear-discharge";
-import NormalFeces from "@/assets/symptom-icons/symptom-reactions/normal-feces";
-import Constipation from "@/assets/symptom-icons/symptom-reactions/constipation";
-import Diarrhea from "@/assets/symptom-icons/symptom-reactions/diarrhea";
-import Happy from "@/assets/symptom-icons/symptom-reactions/happy";
-import Excited from "@/assets/symptom-icons/symptom-reactions/excited";
-import Sad from "@/assets/symptom-icons/symptom-reactions/sad";
-import Angry from "@/assets/symptom-icons/symptom-reactions/angry";
-import Confident from "@/assets/symptom-icons/symptom-reactions/confident";
-import Anxious from "@/assets/symptom-icons/symptom-reactions/anxious";
-import Irritable from "@/assets/symptom-icons/symptom-reactions/irritable";
-import Vivid from "@/assets/symptom-icons/symptom-reactions/vivid";
-import Energetic from "@/assets/symptom-icons/symptom-reactions/energetic";
-import Fatigued from "@/assets/symptom-icons/symptom-reactions/fatigued";
-import Exhausted from "@/assets/symptom-icons/symptom-reactions/exhausted";
-import Calm from "@/assets/symptom-icons/symptom-reactions/calm";
-import Motivated from "@/assets/symptom-icons/symptom-reactions/motivated";
-import Unmotivated from "@/assets/symptom-icons/symptom-reactions/unmotivated";
-import Stressed from "@/assets/symptom-icons/symptom-reactions/stressed";
-import ColdFlu from "@/assets/symptom-icons/symptom-reactions/cold-flu";
-import Allergies from "@/assets/symptom-icons/symptom-reactions/allergies";
-import Fever from "@/assets/symptom-icons/symptom-reactions/fever";
-import STI from "@/assets/symptom-icons/symptom-reactions/sti";
-import UTI from "@/assets/symptom-icons/symptom-reactions/uti";
-import Sociable from "@/assets/symptom-icons/symptom-reactions/sociable";
-import Drained from "@/assets/symptom-icons/symptom-reactions/drained";
-import Reserved from "@/assets/symptom-icons/symptom-reactions/reserved";
+// togglableIcons.ts
+import {
+  Painkillers,
+  Removed,
+  Positive,
+  Ultra,
+  Pad,
+  Tampon,
+  Period,
+  Vulvar,
+  OilySkin,
+  SensitiveSkin,
+  Sweet,
+  Spicy,
+  Salty,
+  StickyDischarge,
+  Sad,
+  Vivid,
+  Unmotivated,
+  Stressed,
+  STI,
+  UTI,
+  Sociable,
+  Reserved,
+  Check,
+  Exclamation,
+  Late,
+  No,
+  Antihistamine,
+  Antibiotics,
+  Contraception,
+  Inserted,
+  Negative,
+  Light,
+  Medium,
+  Heavy,
+  Cup,
+  LowerStomach,
+  LowerBack,
+  Headache,
+  NormalSkin,
+  DrySkin,
+  NormalScalp,
+  OilyScalp,
+  DryScalp,
+  Hairfall,
+  Carbs,
+  Greasy,
+  NormalDigestion,
+  Bloated,
+  Gassy,
+  Heartburn,
+  Nausea,
+  NoneDischarge,
+  ClearDischarge,
+  DryDischarge,
+  CreamyDischarge,
+  NormalFeces,
+  Constipation,
+  Diarrhea,
+  Happy,
+  Excited,
+  Angry,
+  Confident,
+  Anxious,
+  Irritable,
+  Energetic,
+  Fatigued,
+  Exhausted,
+  Calm,
+  Motivated,
+  ColdFlu,
+  Allergies,
+  Fever,
+  Drained,
+  Running,
+  Yoga,
+  Strength,
+  Biking,
+  Walking,
+  RestDay,
+  Protected,
+  Unprotected,
+  HighLibido,
+  LowLibido,
+  Orgasm,
+  NoOrgasm,
+  Masturbation,
+  PartyNight,
+  LightDrinking,
+  Hangover,
+  Vacation,
+  WorkTrip,
+  RestDaySex
+} from "@/assets/symptom-icons/reaction-svg";
 
-// Decide the two possible "colorSet" options
-export type ColorSet = "blush" | "spring" | "fawn" | "green";
+
+export type ColorSet = "blush" | "spring" | "fawn" | "green" | "teal";
 
 export type ToggableIcon = {
   id: string;
@@ -161,8 +182,28 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "fever",        label: "Fever",         IconComponent: Fever,         colorSet: "green" },
   { id: "sti",          label: "STI",           IconComponent: STI,           colorSet: "green" },
   { id: "uti",          label: "UTI",           IconComponent: UTI,           colorSet: "green" },
-  { id: "sociable",     label: "Sociable",      IconComponent: Sociable,           colorSet: "green" },
-  { id: "drained",      label: "Drained",       IconComponent: Drained,           colorSet: "green" },
-  { id: "reserved",     label: "Reserved",      IconComponent: Reserved,           colorSet: "green" },
+  { id: "sociable",     label: "Sociable",      IconComponent: Sociable,      colorSet: "green" },
+  { id: "drained",      label: "Drained",       IconComponent: Drained,       colorSet: "green" },
+  { id: "reserved",     label: "Reserved",      IconComponent: Reserved,      colorSet: "green" },
 
+
+  { id: "running",      label: "Running",       IconComponent: Running,       colorSet: "teal" },
+  { id: "yoga",         label: "Yoga",          IconComponent: Yoga,          colorSet: "teal" },
+  { id: "strength",     label: "Strength",      IconComponent: Strength,      colorSet: "teal" },
+  { id: "biking",       label: "Biking",        IconComponent: Biking,        colorSet: "teal" },
+  { id: "walking",      label: "Walking",       IconComponent: Walking,       colorSet: "teal" },
+  { id: "rest-day",     label: "Rest Day",      IconComponent: RestDay,       colorSet: "teal" },
+  { id: "protected",    label: "Protected",     IconComponent: Protected,     colorSet: "teal" },
+  { id: "unprotected",  label: "Unprotected",   IconComponent: Unprotected,   colorSet: "teal" },
+  { id: "high-libido",  label: "High Libido",   IconComponent: HighLibido,    colorSet: "teal" },
+  { id: "low-libido",   label: "Low Libido",    IconComponent: LowLibido,     colorSet: "teal" },
+  { id: "orgasm",       label: "Orgasm",        IconComponent: Orgasm,        colorSet: "teal" },
+  { id: "no-orgasm",    label: "No Orgasm",     IconComponent: NoOrgasm,      colorSet: "teal" },
+  { id: "masturbation", label: "Masturbation",  IconComponent: Masturbation,  colorSet: "teal" },
+  { id: "rest-day-sex", label: "Rest Day",      IconComponent: RestDaySex,    colorSet: "teal" },
+  { id: "party-night",  label: "Party Night",   IconComponent: PartyNight,    colorSet: "teal" },
+  { id: "light-drinking", label: "Light Drinking", IconComponent: LightDrinking, colorSet: "teal" },
+  { id: "hangover",     label: "Hangover",      IconComponent: Hangover,      colorSet: "teal" },
+  { id: "vacation",     label: "Vacation",      IconComponent: Vacation,      colorSet: "teal" },
+  { id: "work-trip",    label: "Work Trip",     IconComponent: WorkTrip,      colorSet: "teal" },
 ];
