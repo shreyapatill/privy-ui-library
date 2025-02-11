@@ -57,6 +57,22 @@ import Angry from "@/assets/symptom-icons/symptom-reactions/angry";
 import Confident from "@/assets/symptom-icons/symptom-reactions/confident";
 import Anxious from "@/assets/symptom-icons/symptom-reactions/anxious";
 import Irritable from "@/assets/symptom-icons/symptom-reactions/irritable";
+import Vivid from "@/assets/symptom-icons/symptom-reactions/vivid";
+import Energetic from "@/assets/symptom-icons/symptom-reactions/energetic";
+import Fatigued from "@/assets/symptom-icons/symptom-reactions/fatigued";
+import Exhausted from "@/assets/symptom-icons/symptom-reactions/exhausted";
+import Calm from "@/assets/symptom-icons/symptom-reactions/calm";
+import Motivated from "@/assets/symptom-icons/symptom-reactions/motivated";
+import Unmotivated from "@/assets/symptom-icons/symptom-reactions/unmotivated";
+import Stressed from "@/assets/symptom-icons/symptom-reactions/stressed";
+import ColdFlu from "@/assets/symptom-icons/symptom-reactions/cold-flu";
+import Allergies from "@/assets/symptom-icons/symptom-reactions/allergies";
+import Fever from "@/assets/symptom-icons/symptom-reactions/fever";
+import STI from "@/assets/symptom-icons/symptom-reactions/sti";
+import UTI from "@/assets/symptom-icons/symptom-reactions/uti";
+import Sociable from "@/assets/symptom-icons/symptom-reactions/sociable";
+import Drained from "@/assets/symptom-icons/symptom-reactions/drained";
+import Reserved from "@/assets/symptom-icons/symptom-reactions/reserved";
 
 // Decide the two possible "colorSet" options
 export type ColorSet = "blush" | "spring" | "fawn" | "green";
@@ -130,7 +146,23 @@ export const togglableIcons: ToggableIcon[] = [
   { id: "sad",          label: "Sad",           IconComponent: Sad,           colorSet: "green" },
   { id: "angry",        label: "Angry",         IconComponent: Angry,         colorSet: "green" },
   { id: "confident",    label: "Confident",     IconComponent: Confident,     colorSet: "green" },
-  { id: "anxious",      label: "Anxious",       IconComponent: Anxious,     colorSet: "green" },
-  { id: "irritable",    label: "Irritable",     IconComponent: Irritable, colorSet: "green" },
-  
+  { id: "anxious",      label: "Anxious",       IconComponent: Anxious,       colorSet: "green" },
+  { id: "irritable",    label: "Irritable",     IconComponent: Irritable,     colorSet: "green" },
+  { id: "vivid",        label: "Vivid",         IconComponent: Vivid,         colorSet: "green" },
+  { id: "energetic",    label: "Energetic",     IconComponent: Energetic,     colorSet: "green" },
+  { id: "fatigued",     label: "Fatigued",      IconComponent: Fatigued,      colorSet: "green" },
+  { id: "exhausted",    label: "Exhausted",     IconComponent: Exhausted,     colorSet: "green" },
+  { id: "calm",         label: "Calm",          IconComponent: Calm,          colorSet: "green" },
+  { id: "motivated",    label: "Motivated",     IconComponent: Motivated,     colorSet: "green" },
+  { id: "unmotivated",  label: "Unmotivated",   IconComponent: Unmotivated,   colorSet: "green" },
+  { id: "stressed",     label: "Stressed",      IconComponent: Stressed,      colorSet: "green" },
+  { id: "cold-flu",     label: "Cold/Flu",      IconComponent: ColdFlu,       colorSet: "green" },
+  { id: "allergies",    label: "Allergies",     IconComponent: Allergies,     colorSet: "green" },
+  { id: "fever",        label: "Fever",         IconComponent: Fever,         colorSet: "green" },
+  { id: "sti",          label: "STI",           IconComponent: STI,           colorSet: "green" },
+  { id: "uti",          label: "UTI",           IconComponent: UTI,           colorSet: "green" },
+  { id: "sociable",     label: "Sociable",      IconComponent: Sociable,           colorSet: "green" },
+  { id: "drained",      label: "Drained",       IconComponent: Drained,           colorSet: "green" },
+  { id: "reserved",     label: "Reserved",      IconComponent: Reserved,           colorSet: "green" },
+
 ];

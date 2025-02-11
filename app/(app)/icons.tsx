@@ -100,13 +100,11 @@ const ROWS_STRESS = [
   { ids: ["unmotivated", "stressed"] },
 ];
 const ROWS_SOCIAL = [
-  { ids: ["sociable", "drained"] },
-  { ids: ["reserved"] },
+  { ids: ["sociable", "drained", "reserved"] },
 ];
 const ROWS_SICKNESS = [
-  { ids: ["coldFlu", "allergies"] },
-  { ids: ["fever", "sti"] },
-  { ids: ["uti"] },
+  { ids: ["cold-flu", "allergies", "fever"] },
+  { ids: ["sti", "uti"] },
 ];
 
 type Scheme = "blushEmpty" | "blushFilled" | "springEmpty" | "springFilled" | "fawnEmpty" | "fawnFilled" | "greenEmpty" | "greenFilled";
@@ -312,8 +310,8 @@ export default function Icons() {
         </View>
         {ROWS_MOOD.map((row, i) => renderIconRow(row, i))}
 
-                {/* Energy */}
-                <View className="flex flex-row items-center justify-center gap-4 mb-4">
+        {/* Energy */}
+        <View className="flex flex-row items-center justify-center gap-4 mb-4">
           <Energy {...colorSchemes.greenFilled} width={91} height={90} />
           <Muted>Energy</Muted>
         </View>
