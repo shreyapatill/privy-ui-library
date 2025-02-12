@@ -2973,7 +2973,6 @@ export const WorkTrip = createIcon(
   )
 );
 
-
 export const Template = createIcon(
   ({ fillColor, strokeColor, accentColor, secondaryAccentColor, width, height }) => (
   <Svg width={width} height={height} viewBox="0 0 91 90" fill="none">
